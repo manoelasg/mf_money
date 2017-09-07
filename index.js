@@ -23,6 +23,18 @@ app.get('/', (request, response) => {
     response.render('index', {home: true});
 });
 
+app.get('/quem_esta_aqui', (request, response) => {
+    response.render('quem_esta_aqui', {quem_esta_aqui: true});
+});
+
+app.get('/faca_parte', (request, response) => {
+    response.render('faca_parte', {faca_parte: true});
+});
+
+app.get('/contato', (request, response) => {
+    response.render('contato', {contato: true});
+});
+
 // Gera servidor
 app.listen(3000, () => {
     console.log('Servidor inicializado na porta 3000');
