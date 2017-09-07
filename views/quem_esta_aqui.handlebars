@@ -3,10 +3,18 @@
         <div class="jumbotron col-md-5 col-12 py-4 jumqea1">
             <h3 class="">Posso Ajudar</h3>
             <hr class="my-4">
-            <ul>
+            <ul class="list-group">
                 {{#each podem_ajudar}}
-                <li>
-                    <p>{{nome}}</p>
+                <li class="list-group-item list-custom">
+                    <div class="list-div d-flex">
+                        <div class="col-9 nome-div">
+                            <p class="nome">{{nome}}</p>
+                        </div>
+                        <div class="col-3 d-block pontos-div">
+                            <p class="pontos-p">Pontos</p>
+                            <p class="pontos">{{pontos}}</p>
+                        </div>
+                    </div>
                 </li>
                 {{/each}}
             </ul>
@@ -14,10 +22,18 @@
         <div class="jumbotron col-md-5 col-12 py-4 jumqea2">
             <h3 class="">Preciso de Ajuda</h3>
             <hr class="my-4">
-            <ul>
+            <ul class="list-group">
                 {{#each precisam_ajuda}}
-                <li>
-                    <p>{{nome}}</p>
+                <li class="list-group-item list-custom">
+                    <div class="list-div d-flex">
+                        <div class="col-9 nome-div">
+                            <p class="nome">{{nome}}</p>
+                        </div>
+                        <div class="col-3 d-block pontos-div">
+                            <p class="pontos-p">Pontos</p>
+                            <p class="pontos">{{pontos}}</p>
+                        </div>
+                    </div>
                 </li>
                 {{/each}}
             </ul>

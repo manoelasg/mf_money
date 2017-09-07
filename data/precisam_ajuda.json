@@ -1,11 +1,14 @@
 [
     {
-        "nome": "Renan Sigolo"
+        "nome": "Caique Sigolo",
+        "pontos": 200
     },
     {
-        "nome": "Caique Andrade"
+        "nome": "Diandra Andrade",
+        "pontos": 210
     },
     {
-        "nome": "Diandra Silva"
+        "nome": "Renan Silva",
+        "pontos": 195
     }
 ]

@@ -107,6 +107,41 @@ hr.divider {
     padding-right: 25px;
 }
 
+.list-custom{
+    padding: 5px;
+    border: 0;
+    margin: 2px 0 2px 0;
+}
+
+.list-div{
+    height: 60px;
+    line-height: 60px;
+}
+
+.nome-div{
+    padding: 0;
+}
+
+.nome{
+    font-size: 24px;
+    padding: 0;
+}
+
+.pontos-div{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.pontos-p{
+    margin-bottom: 0;
+}
+
+.pontos{
+    margin-bottom: 0;
+}
+
 .show{
     display: flex;
 }
@@ -160,6 +195,10 @@ hr.divider {
     .jumqea2{
         margin-top: 10px;
         margin-bottom: 4em;
+    }
+
+    .list-custom{
+
     }
 
     .show{

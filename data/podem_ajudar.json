@@ -1,17 +1,14 @@
 [
     {
-        "nome": "Camila Achutti"
+        "nome": "Felipe Achutti",
+        "pontos": 215
     },
     {
-        "nome": "Felipe Barreiros"
+        "nome": "Giselle Barreiros",
+        "pontos": 220
     },
     {
-        "nome": "Giselle Cruz"
-    },
-    {
-        "nome": "Bruno Pimentel"
-    },
-    {
-        "nome": "Alberto Anderick"
+        "nome": "Camila Cruz",
+        "pontos": 210
     }
 ]
