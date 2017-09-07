@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const podem_ajudar = require('./data/podem_ajudar.json');
 const precisam_ajuda = require('./data/precisam_ajuda.json');
+const contatos = require('./data/contatos.json')
 
 // Inicializa app web
 const app = express();
@@ -32,7 +33,7 @@ app.get('/faca_parte', (request, response) => {
 });
 
 app.get('/contato', (request, response) => {
-    response.render('contato', {contato: true});
+    response.render('contato', {contato: true, contatos: contatos});
 });
 
 // Gera servidor

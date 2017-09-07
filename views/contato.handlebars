@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Contato</h1>
+        <hr class="my-4">
+        <h4 class="ml-2">Dúvidas ou Sugestões?</h4>
+        <h4 class="ml-2">Entre em contato!</h4>
+        <div class="">
+            <div class="row">
+                {{#each contatos}}
+                <div class="d-sm-flex my-sm-5 max-x">
+                    <div class="col-sm-8 my-2 px-0 max-text">
+                        <div class="card-body text">
+                            <h4 class="card-title m-0">{{nome}}
+                                <br><small class="text-muted">{{email}}</small>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 my-2 px-0 max-pic"></div>
+                    <div class="col-sm-3 my-2 px-0">
+                        <div class="card-img-bottom img-foto pl-0 py-1 text-center">
+                            <img class="card-img-bottom img-foto-img pl-0" src="img/{{foto}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
