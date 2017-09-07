@@ -1,22 +1,26 @@
-<div class="container">
-    <div class="d-md-flex">
-        <div class="jumbotron col-md-6 col-12 mx-1 px-2 py-3">
+<div class="container px-0">
+    <div class="quem_esta_aqui">
+        <div class="jumbotron col-md-5 col-12 py-4 jumqea1">
             <h3 class="">Posso Ajudar</h3>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+            <ul>
+                {{#each podem_ajudar}}
+                <li>
+                    <p>{{nome}}</p>
+                </li>
+                {{/each}}
+            </ul>
         </div>
-        <div class="jumbotron col-md-6 col-12 mx-1 px-2 py-3">
+        <div class="jumbotron col-md-5 col-12 py-4 jumqea2">
             <h3 class="">Preciso de Ajuda</h3>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+            <ul>
+                {{#each precisam_ajuda}}
+                <li>
+                    <p>{{nome}}</p>
+                </li>
+                {{/each}}
+            </ul>
         </div>
     </div>
 </div>

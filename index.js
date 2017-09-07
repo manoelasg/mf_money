@@ -25,7 +25,7 @@ app.get('/', (request, response) => {
 });
 
 app.get('/quem_esta_aqui', (request, response) => {
-    response.render('quem_esta_aqui', {quem_esta_aqui: true});
+    response.render('quem_esta_aqui', {quem_esta_aqui: true, podem_ajudar: podem_ajudar, precisam_ajuda: precisam_ajuda});
 });
 
 app.get('/faca_parte', (request, response) => {

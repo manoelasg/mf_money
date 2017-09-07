@@ -2,13 +2,19 @@
     <div class="jumbotron">
         <h1 class="display-3">Contato</h1>
         <hr class="my-4">
-        <h4 class="ml-2">Dúvidas ou Sugestões?</h4>
-        <h4 class="ml-2">Entre em contato!</h4>
+        <div class="show">
+            <div class="">
+                <h4 class="ml-2">Dúvidas ou Sugestões?</h4>
+            </div>
+            <div class="">
+                <h4 class="ml-2">Entre em contato!</h4>
+            </div>
+        </div>
         <div class="">
             <div class="row">
                 {{#each contatos}}
                 <div class="d-sm-flex my-sm-5 max-x">
-                    <div class="col-sm-8 my-2 px-0 max-text">
+                    <div class="col-md-8 my-2 max-text">
                         <div class="card-body text">
                             <h4 class="card-title m-0">{{nome}}
                                 <br><small class="text-muted">{{email}}</small>

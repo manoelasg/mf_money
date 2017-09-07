@@ -87,6 +87,30 @@ hr.divider {
     margin-bottom: 5em;
 }
 
+.quem_esta_aqui{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumqea1{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.jumqea2{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.show{
+    display: flex;
+}
+
 .max-x{
     margin-left: auto;
     margin-right: auto;
@@ -95,6 +119,11 @@ hr.divider {
     opacity: 0.9;
     border-radius: 10px;
     padding-right: 10px;
+}
+
+.max-text{
+    width: 400px;
+    padding-left: 0;
 }
 
 .img-foto{
@@ -108,16 +137,34 @@ hr.divider {
     border-radius: 100%;
 }
 
-.mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.max-text{
-    width: 400px;
-}
-
 @media (max-width: 576px) {
+
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .quem_esta_aqui{
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .jumqea1{
+        margin-bottom: 10px;
+        margin-top: 4em;
+    }
+
+    .jumqea2{
+        margin-top: 10px;
+        margin-bottom: 4em;
+    }
+
+    .show{
+        display: block;
+    }
 
     .max-x{
         margin-left: auto;
@@ -126,17 +173,20 @@ hr.divider {
         margin-bottom: 10px;
     }
 
+    .max-text{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 270px;
+    }
+
     .text{
         /*text-align: center;*/
         padding: 0;
         padding-left: 10px;
         max-width: 576px;
         margin: auto;
-    }
-
-    .max-text{
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .max-pic{

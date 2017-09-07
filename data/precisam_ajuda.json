@@ -1,26 +1,11 @@
 [
     {
-        "nome": "Renan Sigolo",
-        "acesso": "aluno",
-        "email": "renan@mastertech.tech",
-        "senha": "renanbacana123"
+        "nome": "Renan Sigolo"
     },
     {
-        "nome": "Caique Andrade",
-        "acesso": "aluno",
-        "email": "caique@mastertech.tech",
-        "senha": "caique@2017"
+        "nome": "Caique Andrade"
     },
     {
-        "nome": "Diandra Silva",
-        "acesso": "admin",
-        "email": "diandra@mastertech.tech",
-        "senha": "didi<3"
-    },
-    {
-        "nome": "Bruno Pimentel",
-        "acesso": "admin",
-        "email": "bruno@mastertech.tech",
-        "senha": "bruno123!@_"
+        "nome": "Diandra Silva"
     }
 ]
