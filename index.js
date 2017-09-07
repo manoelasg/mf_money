@@ -7,6 +7,9 @@ const podem_ajudar = require('./data/podem_ajudar.json');
 const precisam_ajuda = require('./data/precisam_ajuda.json');
 const contatos = require('./data/contatos.json')
 
+let arrayPrecisaAjuda = [];
+let arrayPodeAjudar = [];
+
 // Inicializa app web
 const app = express();
 
@@ -30,6 +33,21 @@ app.get('/quem_esta_aqui', (request, response) => {
 
 app.get('/faca_parte', (request, response) => {
     response.render('faca_parte', {faca_parte: true});
+});
+app.post('/faca_parte', (request, response) => {
+
+    if (request.body.tipoUsuario === "credor"){
+        response.render('email_enviado', {faca_parte: true});
+        arrayPodeAjudar.push(request.body.nomeUsuario);
+    } else if (request.body.tipoUsuario === "tomador") {
+        arrayPrecisaAjuda.push(request.body.nomeUsuario);
+        response.render('email_enviado', {faca_parte: true});
+    } else {
+        response.render('faca_parte', {faca_parte: true});
+    }
+
+    console.log("Credor: " + arrayPodeAjudar);
+    console.log("Tomador: " + arrayPrecisaAjuda);
 });
 
 app.get('/contato', (request, response) => {
