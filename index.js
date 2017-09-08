@@ -36,15 +36,38 @@ app.get('/faca_parte', (request, response) => {
 });
 app.post('/faca_parte', (request, response) => {
 
-    if (request.body.tipoUsuario === "credor"){
-        response.render('email_enviado', {faca_parte: true});
-        arrayPodeAjudar.push(request.body.nomeUsuario);
-    } else if (request.body.tipoUsuario === "tomador") {
-        arrayPrecisaAjuda.push(request.body.nomeUsuario);
-        response.render('email_enviado', {faca_parte: true});
-    } else {
-        response.render('faca_parte', {faca_parte: true});
+    //Consistência de e-mail válido
+    let email = request.body.emailUsuario;
+    let emailValido = (email) => {
+        if (email.search("@") < 0 || email.search(" ") > 0 || email.length < 10)
+            return false;
+        else
+            return true;
     }
+    console.log(`E-mail ${email} valido: ${emailValido(email)}`);
+
+    //Consistência de nome preenchido
+    let nome = request.body.nomeUsuario;
+    let nomeValido = nome.length > 0;
+    console.log(`Nome: ${nome} valido: ${nomeValido}`);
+
+    //Consistência de tipo de usuário;
+    let tipoUsuario = request.body.tipoUsuario;
+    let usuarioValido = tipoUsuario.length > 0;
+    console.log(`Tipo: ${tipoUsuario} valido: ${usuarioValido}`);
+
+    //Roteia para a tela de acordo com a consistência do input
+    if (emailValido(email) && nomeValido && usuarioValido) {
+        //Lógica para enviar e-mail - implementar
+        response.render('email_enviado', {faca_parte: true});
+    } else
+        response.render('faca_parte', {faca_parte: true});
+
+    //Salva usuário no "banco de dados" adequado
+    if (usuarioValido && tipoUsuario === "credor")
+        arrayPodeAjudar.push(nome);
+    else if (usuarioValido && tipoUsuario === "tomador")
+        arrayPrecisaAjuda.push(nome);
 
     console.log("Credor: " + arrayPodeAjudar);
     console.log("Tomador: " + arrayPrecisaAjuda);
